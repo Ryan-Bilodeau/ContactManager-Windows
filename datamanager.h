@@ -8,6 +8,8 @@
 using std::string;
 #include <vector>
 using std::vector;
+#include <map>
+using std::map;
 
 #include <QtSql/QSqlDatabase>
 
@@ -18,33 +20,23 @@ private:
     //=========================================================================
     // Private data members
     //=========================================================================
-    // Used for connecting to the database
-    const string SERVER_NAME = "";
-    const string USER_NAME = "";
-    const string USER_PASSWORD = "";
     QSqlDatabase database;
-
-    // Contacts and groups
-    vector<Contact> _contacts;
-    vector<Group> _groups;
 
     //=========================================================================
     // Private helper functions
     //=========================================================================
     void connectToDatabase();       // Establish database connection
     void fetchGroupsAndContacts();  // Get all groups and contacts
+    void updateGroup(Group & group);
 public:
     //=========================================================================
     // Constructor automatically connects to database and fetches data
     //=========================================================================
     DataManager();
+    ~DataManager();
 
-    //=========================================================================
-    // Getters
-    //=========================================================================
-    vector<Contact> getContacts() const { return _contacts; }
-    Contact & getContact() const;
-    vector<Group> getGroups() const { return _groups; }
+    map<long int, Contact> Contacts;
+    map<long int, Group> Groups;
 
     //=========================================================================
     // Public helper functions
@@ -52,18 +44,21 @@ public:
     // Managing contacts in the contacts vector
     void addContact(Contact & contact);
     void updateContact(Contact & contact);
-    void deleteContact(Contact & contact);
+    void updateContact(const string & firstName, char middleInitial, const string & lastName,
+                       const string & streetAddress, int zip, const string & city, const string & state,
+                       const string & email, long long int phone, long int id);
+    void deleteContact(long int id);
 
     // Managing groups in the groups vector
     void addGroup(Group & group);
-    void updateGroup(Group & group);
-    void deleteGroup(Group & group);
+    void updateGroup(const string & groupName, vector<long int> & contactIDs, long int id);
+    void deleteGroup(long int id);
     void addContactToGroup(Group & group, Contact & contact);
     void removeContactFromGroup(Group & group, Contact & contact);
 
-    // Sorting functions
-    void sertContacts(bool ascending);
-    void sortGroups(bool ascending);
+    // Debugging functions
+    void printAllContacts();
+    void printAllGroups();
 };
 
 #endif // DATAMANAGER_H

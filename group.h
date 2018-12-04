@@ -15,31 +15,33 @@ private:
     // Private data members
     //=========================================================================
     string _name;
-    vector<Contact> _contacts;
     long int _id;
 public:
     //=========================================================================
     // Constructors to create a new group, name is required but contacts aren't
-    Group(string & groupName);
-    Group(string & groupName, vector<Contact> & contacts);
+    //=========================================================================
+    Group(const string & groupName);
+    Group(const string & groupName, vector<long int> & contactIDs, long int id);
+
+    vector<long int> ContactIDs;
 
     //=========================================================================
     // Getters
     //=========================================================================
-    string getName() const { return _name; }
-    vector<Contact> getContacts() const { return _contacts; }
+    const string & getName() const { return _name; }
     long int getID() const { return _id; }
 
     //=========================================================================
     // Setters
     //=========================================================================
-    void setName(string & groupName);
+    void setName(const string & groupName);
+    void setID(long int id);
 
     //=========================================================================
     // Public helper functions
     //=========================================================================
-    void addContact(Contact & contact);     // Called by the datamanager
-    void removeContact(Contact & contact);  // Called by the datamanager
+    void addContact(long int id);     // Called by the datamanager
+    void removeContact(long int id);  // Called by the datamanager
 };
 
 #endif // GROUP_H
