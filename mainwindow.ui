@@ -390,6 +390,19 @@
      <string>Create New Contact</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>360</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>To create new contact: Select &quot;Create New Contact,&quot; enter info, select &quot;Update Contact&quot;</string>
+    </property>
+   </widget>
    <zorder>ContactInformation</zorder>
    <zorder>AddButton</zorder>
    <zorder>AddGroupButton</zorder>
@@ -418,6 +431,7 @@
    <zorder>label_9</zorder>
    <zorder>addressEdit_3</zorder>
    <zorder>AddGroupButton_2</zorder>
+   <zorder>label_10</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
