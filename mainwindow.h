@@ -26,8 +26,6 @@ private slots:
 
     void on_deleteButton_clicked();
 
-    DataManager db;
-
 private:
     Ui::MainWindow *ui;
     Contact * current;

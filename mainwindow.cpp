@@ -43,3 +43,8 @@ void MainWindow::on_deleteButton_clicked()
 {
 
 }
+
+void MainWindow::on_actionExit_triggered()
+{
+
+}
