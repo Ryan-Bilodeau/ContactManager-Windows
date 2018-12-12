@@ -6,27 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>910</width>
-    <height>577</height>
+    <width>882</width>
+    <height>549</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="AddButton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>470</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Add</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="updateButton">
     <property name="geometry">
      <rect>
@@ -38,19 +25,6 @@
     </property>
     <property name="text">
      <string>Update Contact</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="DeleteButton">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>470</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Delete</string>
     </property>
    </widget>
    <widget class="QListView" name="ContactList">
@@ -136,19 +110,6 @@
     </property>
     <property name="text">
      <string>Delete Contact</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>470</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Create Group</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableWidget">
@@ -404,16 +365,13 @@
     </property>
    </widget>
    <zorder>ContactInformation</zorder>
-   <zorder>AddButton</zorder>
    <zorder>updateButton</zorder>
-   <zorder>DeleteButton</zorder>
    <zorder>ContactList</zorder>
    <zorder>fnLineEdit</zorder>
    <zorder>label</zorder>
    <zorder>addressLabel</zorder>
    <zorder>label_3</zorder>
    <zorder>deleteButton</zorder>
-   <zorder>pushButton_2</zorder>
    <zorder>tableWidget</zorder>
    <zorder>streetLineEdit</zorder>
    <zorder>pLineEdit</zorder>
@@ -438,7 +396,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>910</width>
+     <width>882</width>
      <height>19</height>
     </rect>
    </property>
@@ -447,10 +405,7 @@
      <string>Menu</string>
     </property>
     <addaction name="separator"/>
-    <addaction name="actionAdd"/>
     <addaction name="actionAdd_Group"/>
-    <addaction name="actionEdit"/>
-    <addaction name="actionDelete"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
