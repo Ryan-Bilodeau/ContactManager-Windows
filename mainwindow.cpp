@@ -12,3 +12,18 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_createButton_clicked()
+{
+
+}
+
+void MainWindow::on_updateButton_clicked()
+{
+
+}
+
+void MainWindow::on_deleteButton_clicked()
+{
+
+}
