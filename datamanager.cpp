@@ -382,7 +382,7 @@ void DataManager::updateGroup(Group &group) {
     query.setForwardOnly(true);
 
     std::stringstream sql;
-    sql << "UPDATE Contacts SET " <<
+    sql << "UPDATE Groups SET " <<
            "groupName = '" << group.getName() <<
            "', contactKey = '";;
 
@@ -405,6 +405,7 @@ void DataManager::updateGroup(Group &group) {
     if (query.exec()) {                     // Execute query, if successful...
         cout << "Successfully updated group" << endl;
     } else {
+        cout << sql.str();
         throw std::runtime_error("Error in DataManager.updateGroup: couldn't execute query");
     }
 }
@@ -462,17 +463,17 @@ void DataManager::deleteGroup(long int id) {
         query.setForwardOnly(true);
 
         std::stringstream sql;
-        sql << "DELETE FROM Contacts WHERE id = '" << id << "';";
+        sql << "DELETE FROM Groups WHERE id = '" << id << "';";
 
         query.prepare(QString::fromStdString(sql.str()));
 
         // If database was updated...
         if (query.exec()) {
-            map<long int, Contact>::iterator iter = Contacts.find(id);
+            map<long int, Group>::iterator iter = Groups.find(id);
 
-            Contacts.erase(iter);
+            Groups.erase(iter);
 
-            cout << "Successfully deleted contact from database" << endl;
+            cout << "Successfully deleted group from database" << endl;
         } else {
             throw std::runtime_error("Error in DataManager.deleteContact: "
                                      "Failed to delete contact from database");
