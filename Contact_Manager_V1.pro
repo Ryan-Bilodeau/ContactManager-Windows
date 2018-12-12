@@ -30,8 +30,8 @@ SOURCES += \
     contact.cpp \
     group.cpp \
     datamanager.cpp \
-    strings.cpp \
-    helperfunctions.cpp
+    helperfunctions.cpp \
+    strings.cpp
 
 HEADERS += \
         mainwindow.h \

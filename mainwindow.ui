@@ -27,7 +27,7 @@
      <string>Add</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="AddGroupButton">
+   <widget class="QPushButton" name="updateButton">
     <property name="geometry">
      <rect>
       <x>540</x>
@@ -73,7 +73,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="nameEdit">
+   <widget class="QLineEdit" name="fnLineEdit">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -99,7 +99,7 @@
      <string>First Name:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="addressLabel">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -125,7 +125,7 @@
      <string>Phone:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="deleteButton">
     <property name="geometry">
      <rect>
       <x>660</x>
@@ -206,7 +206,7 @@
      </property>
     </row>
    </widget>
-   <widget class="QLineEdit" name="addressEdit">
+   <widget class="QLineEdit" name="streetLineEdit">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -216,7 +216,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="pLineEdit">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -226,7 +226,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lnLineEdit">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -236,7 +236,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="cityLineEdit">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -272,7 +272,7 @@
      <string>Email:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="eLineEdit">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -331,7 +331,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="addressEdit_2">
+   <widget class="QLineEdit" name="stateLineEdit">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -367,7 +367,7 @@
      <string>ZIP:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="addressEdit_3">
+   <widget class="QLineEdit" name="zipLineEdit">
     <property name="geometry">
      <rect>
       <x>690</x>
@@ -377,7 +377,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="AddGroupButton_2">
+   <widget class="QPushButton" name="createButton">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -390,7 +390,7 @@
      <string>Create New Contact</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="instructionsLabel">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -405,33 +405,33 @@
    </widget>
    <zorder>ContactInformation</zorder>
    <zorder>AddButton</zorder>
-   <zorder>AddGroupButton</zorder>
+   <zorder>updateButton</zorder>
    <zorder>DeleteButton</zorder>
    <zorder>ContactList</zorder>
-   <zorder>nameEdit</zorder>
+   <zorder>fnLineEdit</zorder>
    <zorder>label</zorder>
-   <zorder>label_2</zorder>
+   <zorder>addressLabel</zorder>
    <zorder>label_3</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>deleteButton</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>tableWidget</zorder>
-   <zorder>addressEdit</zorder>
-   <zorder>lineEdit_3</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
+   <zorder>streetLineEdit</zorder>
+   <zorder>pLineEdit</zorder>
+   <zorder>lnLineEdit</zorder>
+   <zorder>cityLineEdit</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
-   <zorder>lineEdit_4</zorder>
+   <zorder>eLineEdit</zorder>
    <zorder>line</zorder>
    <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>graphicsView</zorder>
-   <zorder>addressEdit_2</zorder>
+   <zorder>stateLineEdit</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
-   <zorder>addressEdit_3</zorder>
-   <zorder>AddGroupButton_2</zorder>
-   <zorder>label_10</zorder>
+   <zorder>zipLineEdit</zorder>
+   <zorder>createButton</zorder>
+   <zorder>instructionsLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
